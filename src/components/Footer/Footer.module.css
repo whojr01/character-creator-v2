@@ -6,3 +6,27 @@
   text-align: center;
 }
 
+/*
+  Excercise 1
+  Added styles to anchor.
+ */
+a {
+  color: white;
+}
+
+a:focus,
+a:visited {
+  color: white;
+}
+
+a:hover {
+  outline: 2px solid white;
+  color: lime;
+}
+
+/* Excercise 5 */
+@media screen and (max-width: 45rem) {
+  .footer {
+    font-size: 16px;
+  }
+}

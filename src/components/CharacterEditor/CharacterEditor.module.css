@@ -1,4 +1,15 @@
+/* Excercise 2 */
+/*
+ The maxWidthWrapper constrains the max-width.
+  The header should be 65% of that width
+  The control-panel should be 50%
+  The character should be fixed position even
+  with the top of the control panel with a minimum
+  height of 500px.
+ */
+
 .characterEditor {
+  position: relative; /* Anchors the character */
   padding-top: 128px;
   padding-bottom: 64px;
 }
@@ -7,6 +18,7 @@
 }
 
 .header {
+  width: 65%;
   padding-bottom: 64px;
 }
 
@@ -24,7 +36,51 @@
 }
 
 .characterWrapper {
+  position: absolute;
+  top: 28%;
+  left: 60%;
+  height: 20%;
+  min-height: 500px;
 }
 
 .controlColumn {
+  width: 50%;
+}
+
+/* Excercise 5 */
+@media screen and (max-width: 45rem) {
+  .maxWidthWrapper {
+    height: 100vh;
+  }
+
+  .characterEditor {
+    margin-inline: auto;
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  .characterEditor h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .characterEditor p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .characterWrapper {
+    top: 25%;
+    left: 0;
+    height: 70%;
+  }
+
+  .controlColumn {
+    position: absolute;
+    bottom: 40%;
+    width: 53%;
+    overflow-x: auto;
+    white-space: nowrap;
+    z-index: 2;
+  }
 }

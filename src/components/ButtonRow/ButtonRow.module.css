@@ -1,2 +1,10 @@
 .buttonRow {
+  /* Excercise 3 */
+  /* LOL - that was a clever problem you created so cool I nolong wonder why you included that! */
+  /* Force the overflow by preventing line wrap.
+  Then instead of using overflow: scroll use
+  overflow: auto. It removes the scroll bars for those that don't have enough to scroll.
+   */
+  white-space: nowrap;
+  overflow-x: auto;
 }
