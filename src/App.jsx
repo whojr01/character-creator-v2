@@ -6,8 +6,6 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      {/* Excercise 4 */}
-      <div className="bar"></div>
       <CharacterEditor />
       <Footer />
     </>

@@ -7,4 +7,15 @@
    */
   white-space: nowrap;
   overflow-x: auto;
+
+  /*
+    Solution addition:
+    Josh styled the button row to remove the padding from the container which positions the scrollbar to the edge of the component. In addition he allows for a 2px gap between the scrollbar and the edge.
+
+    This is a stylistic modification that I think looks ok and a bit cleaner. 
+     */
+  margin-left: -22px;
+  margin-right: -22px;
+  margin-bottom: -22px;
+  padding: 22px;
 }

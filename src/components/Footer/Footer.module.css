@@ -11,16 +11,20 @@
   Added styles to anchor.
  */
 a {
-  color: white;
+  /* color: white; */
+  /* Josh's solution. This allows you to copy the text color without adjusting. */
+  color: inherit;
 }
 
 a:focus,
 a:visited {
-  color: white;
+  color: inherit;
 }
 
 a:hover {
+  /* Note: Outline/border does not inherit color */
   outline: 2px solid white;
+  /* Having fun... :-) */
   color: lime;
 }
 

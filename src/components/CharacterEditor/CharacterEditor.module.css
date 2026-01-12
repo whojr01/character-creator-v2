@@ -15,6 +15,8 @@
 }
 
 .maxWidthWrapper {
+  /* Excercise 4: Solution */
+  position: relative;
 }
 
 .header {
@@ -35,8 +37,12 @@
   margin: 0;
 }
 
+/* Excercise 2: */
 .characterWrapper {
-  position: absolute;
+  /* Solution change:
+   I had a serious brain fart when I set this to be position: absolute. It should have been fixed.
+  */
+  position: fixed;
   top: 28%;
   left: 60%;
   height: 20%;
@@ -45,6 +51,21 @@
 
 .controlColumn {
   width: 50%;
+}
+
+/* Excercise 4 */
+/* I screwed up on this. I had orginally added this to index.css and the corresponding div in App.jsx.
+
+ This put it outside of the component which goes against the component model of controling it's own look and feel.
+*/
+.bar {
+  position: absolute;
+  background-color: hsl(195deg, 20%, 86%);
+  width: 100%;
+  height: 40%;
+  bottom: 5%;
+  left: 0;
+  z-index: -1;
 }
 
 /* Excercise 5 */
